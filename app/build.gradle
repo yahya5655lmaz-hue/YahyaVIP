@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace 'com.yahya.vip' // Burayı kendi paket adınla değiştirebilirsin
+    namespace 'pubgm.loader'
     compileSdk 34
 
     defaultConfig {
@@ -22,7 +22,7 @@ android {
 }
 
 dependencies {
-    // Eğer özel kütüphanelerin varsa buraya eklenmeli
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.android.volley:volley:1.2.1'
+    implementation 'com.google.android.material:material:1.11.0'
 }

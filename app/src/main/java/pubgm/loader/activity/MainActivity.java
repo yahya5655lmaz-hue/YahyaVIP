@@ -134,7 +134,7 @@ import android.content.pm.Signature;
 import java.security.MessageDigest;
 
 
-@Obfuscate
+// @Obfuscate
 public class MainActivity extends ActivityCompat {
 
     public static String socket;
