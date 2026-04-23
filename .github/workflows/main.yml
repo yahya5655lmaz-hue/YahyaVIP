@@ -32,13 +32,3 @@ jobs:
       with:
         name: YahyaVIP-Debug
         path: app/build/outputs/apk/debug/app-debug.apk
-
-    - name: Upload APK to Releases
-      if: startsWith(github.ref, 'refs/heads/main')
-      uses: softprops/action-gh-release@v1
-      with:
-        files: app/build/outputs/apk/debug/app-debug.apk
-        body: "YAHYA VIP - Auto Built APK"
-        prerelease: true
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
