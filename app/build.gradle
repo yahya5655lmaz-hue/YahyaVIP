@@ -19,12 +19,6 @@ android {
             minifyEnabled false
         }
     }
-    
-    repositories {
-        flatDir {
-            dirs 'libs'
-        }
-    }
 }
 
 dependencies {
@@ -38,6 +32,6 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'com.google.code.gson:gson:2.10.1'
     implementation 'com.github.nightonke:BoomMenu:2.1.11'
-    implementation(name: 'Bcore-okAll', ext: 'aar')
-    implementation(name: 'tastytoast-0.1.1', ext: 'aar')
+    implementation files('libs/Bcore-okAll.aar')
+    implementation files('libs/tastytoast-0.1.1.aar')
 }
