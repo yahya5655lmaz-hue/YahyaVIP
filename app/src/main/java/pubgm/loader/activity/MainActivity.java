@@ -1298,31 +1298,31 @@ public void bypass() {
 
         timerHandler.postDelayed(timerRunnable, 0);
     }
-}
-// Internetten güncel offset ve durum bilgisini çeken fonksiyon
-private void fetchUpdatesFromPanel() {
-    String offsetUrl = "http://gamer.gd";
 
-    RequestQueue queue = Volley.newRequestQueue(this);
-    StringRequest request = new StringRequest(Request.Method.GET, offsetUrl,
-        new Response.Listener<String>() {
-            @Override
-            public void onResponse(String response) {
-                try {
-                    JSONObject json = new JSONObject(response);
-                    String status = json.getString("status");
+    private void fetchUpdatesFromPanel() {
+        String offsetUrl = "http://gamer.gd";
 
-                    if (status.equals("online")) {
-                        Toast.makeText(MainActivity.this, "YAHYA VIP: Sistem Guncel!", Toast.LENGTH_SHORT).show();
-                    } else {
-                        Toast.makeText(MainActivity.this, "Hile Bakimda! Lütfen Bekleyin.", Toast.LENGTH_LONG).show();
-                        finishAffinity();
+        RequestQueue queue = Volley.newRequestQueue(this);
+        StringRequest request = new StringRequest(Request.Method.GET, offsetUrl,
+            new Response.Listener<String>() {
+                @Override
+                public void onResponse(String response) {
+                    try {
+                        JSONObject json = new JSONObject(response);
+                        String status = json.getString("status");
+
+                        if (status.equals("online")) {
+                            Toast.makeText(MainActivity.this, "YAHYA VIP: Sistem Guncel!", Toast.LENGTH_SHORT).show();
+                        } else {
+                            Toast.makeText(MainActivity.this, "Hile Bakimda! Lütfen Bekleyin.", Toast.LENGTH_LONG).show();
+                            finishAffinity();
+                        }
+                    } catch (Exception e) {
+                        Log.e("YAHYA_LOG", "Veri okuma hatasi");
                     }
-                } catch (Exception e) {
-                    Log.e("YAHYA_LOG", "Veri okuma hatasi");
                 }
-            }
-        }, error -> Log.e("YAHYA_LOG", "Panel baglanti hatasi"));
+            }, error -> Log.e("YAHYA_LOG", "Panel baglanti hatasi"));
 
-    queue.add(request);
+        queue.add(request);
+    }
 }
