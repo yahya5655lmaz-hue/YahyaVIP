@@ -6,10 +6,18 @@
         <attr name="abb_indicatorAnimation" format="string"/>
         <attr name="abb_indicatorAppearance" format="string"/>
         <attr name="abb_indicatorColor" format="color"/>
+        <attr name="abb_indicatorHeight" format="dimension"/>
+        <attr name="abb_indicatorLocation" format="string"/>
+        <attr name="abb_indicatorMargin" format="dimension"/>
         <attr name="abb_indicatorWidth" format="dimension"/>
         <attr name="abb_rippleColor" format="color"/>
+        <attr name="abb_rippleEnabled" format="boolean"/>
         <attr name="abb_selectedTabType" format="string"/>
+        <attr name="abb_tabAnimation" format="string"/>
         <attr name="abb_tabAnimationSelected" format="string"/>
+        <attr name="abb_tabColor" format="color"/>
+        <attr name="abb_tabColorSelected" format="color"/>
         <attr name="abb_tabs" format="reference"/>
+        <attr name="abb_textAppearance" format="reference"/>
     </declare-styleable>
 </resources>
