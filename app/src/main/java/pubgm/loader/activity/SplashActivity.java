@@ -20,7 +20,7 @@ import pubgm.loader.utils.ActivityCompat;
 
 import org.lsposed.lsparanoid.Obfuscate;
 
-@Obfuscate
+// @Obfuscate
 public class SplashActivity extends ActivityCompat {
 
     public static boolean mahyong = false;

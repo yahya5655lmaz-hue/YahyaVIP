@@ -16,7 +16,7 @@ import pubgm.loader.databinding.ActivityCrashBinding;
 
 import io.michaelrocks.paranoid.Obfuscate;
 
-@Obfuscate
+// @Obfuscate
 public class ZOONMODActivity extends AppCompatActivity {
     private ActivityCrashBinding binding;
 

@@ -10,7 +10,7 @@ import org.lsposed.lsparanoid.Obfuscate;
 
 import pubgm.loader.R;
 
-@Obfuscate
+// @Obfuscate
 public class NetworkConnection {
     /*
     public static class CheckInternet {

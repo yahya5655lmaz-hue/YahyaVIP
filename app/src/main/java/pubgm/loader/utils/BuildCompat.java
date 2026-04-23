@@ -4,7 +4,7 @@ import android.os.Build;
 
 import org.lsposed.lsparanoid.Obfuscate;
 
-@Obfuscate
+// @Obfuscate
 public class BuildCompat {
     
     public static boolean isA11below() {

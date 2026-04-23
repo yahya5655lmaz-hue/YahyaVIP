@@ -14,7 +14,7 @@ import java.util.Calendar;
 
 import io.michaelrocks.paranoid.Obfuscate;
 
-@Obfuscate
+// @Obfuscate
 public class CrashHandler implements Thread.UncaughtExceptionHandler {
   private static final String TAG = "CrashHandler";
   private final Context context;

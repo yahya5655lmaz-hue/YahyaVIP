@@ -9,7 +9,7 @@ import org.jdeferred.android.AndroidDeferredManager;
 
 import org.lsposed.lsparanoid.Obfuscate;
 
-@Obfuscate
+// @Obfuscate
 public class UiKit {
 	private static final AndroidDeferredManager gDM = new AndroidDeferredManager();
 	private static final Handler gUiHandler = new Handler(Looper.getMainLooper());

@@ -7,7 +7,7 @@ import android.preference.PreferenceManager;
 import java.util.Set;
 import org.lsposed.lsparanoid.Obfuscate;
 
-@Obfuscate
+// @Obfuscate
 public class FPrefs {
     private static final String LENGTH = "_length";
     private static final String DEFAULT_STRING_VALUE = "";

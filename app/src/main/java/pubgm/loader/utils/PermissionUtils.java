@@ -6,7 +6,7 @@ import android.provider.DocumentsContract;
 //import pubgm.loader.Config;
 import org.lsposed.lsparanoid.Obfuscate;
 
-@Obfuscate
+// @Obfuscate
 public class PermissionUtils {
     public static int OPEN_FOLDER_REQUEST_CODE = -1;
 

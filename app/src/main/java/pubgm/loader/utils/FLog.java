@@ -4,7 +4,7 @@ import android.util.Log;
 import io.michaelrocks.paranoid.Obfuscate;
 import pubgm.loader.BuildConfig;
 
-@Obfuscate
+// @Obfuscate
 public class FLog {
     public static final String TAG = FLog.class.getSimpleName();
     
