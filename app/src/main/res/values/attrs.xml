@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BoomMenuButton">
+        <attr name="abb_animationDuration" format="integer"/>
+        <attr name="abb_iconSize" format="dimension"/>
+        <attr name="abb_indicatorAnimation" format="string"/>
+        <attr name="abb_indicatorAppearance" format="string"/>
+        <attr name="abb_indicatorColor" format="color"/>
+        <attr name="abb_indicatorWidth" format="dimension"/>
+        <attr name="abb_rippleColor" format="color"/>
+        <attr name="abb_selectedTabType" format="string"/>
+        <attr name="abb_tabAnimationSelected" format="string"/>
+        <attr name="abb_tabs" format="reference"/>
+    </declare-styleable>
+</resources>
