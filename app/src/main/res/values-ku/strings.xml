@@ -1,0 +1,295 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">𝒀𝑨𝑯𝒀𝑨 𝑽𝑰𝑷</string>
+    <string name="app_description">HELLO HACK - 𝒀𝑨𝑯𝒀𝑨 𝑳𝑶𝑨𝑫𝑬𝑹</string>
+    <string name="invalid_key_format">هاه‌، بەڕێز بگەڕێ ببین ئەو ئەسپە چی دەکات 🤣</string>
+    <string name="player">کەشف</string>
+    <string name="navItem">شتی زیادە</string>
+    <string name="navAim">ئایم</string>
+    <string name="navSdk">زیاتر</string>
+    <string name="close">داخستن</string>
+    
+    <string name="pastekey">لکاندنی کلیلی</string>
+    <string name="login">چوونەژوورەوە</string>
+    <string name="install">دامەزراندن</string>
+    <string name="uninstall">لابردنی</string>
+    <string name="protection">سێرڤەر</string>
+    <string name="logout">چوونەدەرەوە لە ئەپ</string>
+    <string name="logoutt">چوونەدەرەوە</string>
+    <string name="disable">ناچالاککردن</string>
+    <string name="home">سەرەکی</string>
+    <string name="settings">ڕێکخستنەکان</string>
+    <string name="profile">پڕۆفایل</string>
+    <string name="donwload">داگرتن</string>
+    <string name="pro">Pro</string>
+    <string name="please_click_icon_logout_for_exit">تکایە کلیک بە سەر ئایکۆنی چوونەدەرەوە بکە بۆ دەرچوون!!</string>
+    <string name="please_enter_username">تکایە ناوی بەکارهێنەر بنووسە</string>
+    <string name="please_allow_permision_floating">تکایە مۆڵەتی فڵۆتینگ بدە</string>
+    <string name="exit">دەرچوون</string>
+    <string name="yes">بەڵێ</string>
+    <string name="no">نەخێر</string>
+    <string name="file_access_title">مۆڵەتی دەستگەیشتن بە فایل</string>
+    <string name="file_access_message">ئەم ئەپە پێویستی بە مۆڵەتە بۆ دەستگەیشتن بە فایلەکان لە سەرهەڵدەری ئامێرەکەت بۆ ئەوەی بە شێوەیەکی دروست کار بکات. تکایە مۆڵەت بدە بۆ بەردەوامبوون.</string>
+    <string name="grant_permission">دانی مۆڵەت</string>
+    <string name="day">ڕۆژ</string>
+    <string name="hour">کاتژمێر</string>
+    <string name="minute">خولەک</string>
+    <string name="second">چرکە</string>
+    <string name="days">ڕۆژ</string>
+    <string name="hours">کاتژمێر</string>
+    <string name="minutes">خولەک</string>
+    <string name="seconds">چرکە</string>
+    <string name="bottom_sheet_dialog_layout_title_text">ناونیشان</string>
+    <string name="bottom_sheet_dialog_layout_msg_text">پەیام</string>
+    <string name="bottom_sheet_dialog_layout_btn_cancle_text">نەخێر</string>
+    <string name="bottom_sheet_dialog_layout_btn_text">باشە</string>
+    <string name="obb_copied">کۆپی کراوە</string>
+    <string name="esp">دیارکەر</string>
+    <string name="esp_visual_isenableesp_text">چالاککردنی دیارکەر</string>
+    <string name="line">هێڵ</string>
+    <string name="box">سندوق</string>
+    <string name="skeleton">پەیکەر</string>
+    <string name="health">تەندروستی</string>
+    <string name="distance">دووری</string>
+    <string name="name">ناو</string>
+    <string name="head">سەر</string>
+    <string name="weapon">چەک</string>
+    <string name="hide_bot">شاردنەوەی بۆت</string>
+    <string name="esp_aimbot_rangetext_text">0</string>
+    <string name="esp_aimbot_distancetext_text">0</string>
+    <string name="esp_aimbot_bulletspeedtext_text">0</string>
+    <string name="esp_aimbot_recoiltext_text">0</string>
+    <string name="esp_memory_rangetextwide_text">0</string>
+    <string name="aim">ئایم</string>
+    <string name="aimbot">ئایمبۆت</string>
+    <string name="ignore_knocked"> پشتگوێخستنی نۆک</string>
+    <string name="ignore_aiming_when_knock">پشتگوێخستنی ئایم کە نۆک کراوە</string>
+    <string name="ignore_bot">پشتگوێخستنی بۆت</string>
+    <string name="ignores_aiming_at_bots">پشتگوێخستنی ئایم کردن بەسەر بۆت</string>
+    <string name="aiming_range">مەودای ئایم</string>
+    <string name="set_fov_radius_range">دانانی مەودای تیرەی FOV:</string>
+    <string name="aiming_distance">دووری ئایم</string>
+    <string name="aiming_speed">خێرایی ئایم</string>
+    <string name="recoil_compesation">جێگیری ڕیکۆیل</string>
+    <string name="set_the_weapon_compensation_recoil">جێگیری ڕیکۆیلی چەک:</string>
+    <string name="target_aiming">ئامانجی ئایم</string>
+    <string name="aiming_priority">لەپێشەویی ئایم</string>
+    <string name="aim_trigger_mode">دۆخی تریگەری ئایم</string>
+    <string name="aimbot_100m">ئایمبۆت 100م</string>
+    <string name="increases_aiming_speed">زیادکردنی خێرایی ئایم</string>
+    <string name="wide_view">بینینی پان</string>
+    <string name="set_wide_view_range">دانانی مەودای بینینی پان:</string>
+    <string name="esp_aimbot_radioButton_text">سەر</string>
+    <string name="esp_aimbot_radioButton2_text">مل</string>
+    <string name="esp_aimbot_radioButton3_text">سنگ</string>
+    <string name="esp_aimbot_radioButton9_text">لەپێشەویی یەکتربڕین</string>
+    <string name="esp_aimbot_radioButton4_text">لەپێشەویی دووری</string>
+    <string name="esp_aimbot_radioButton5_text">ئایم یان تەقە</string>
+    <string name="esp_aimbot_radioButton6_text">تەنها ئایم</string>
+    <string name="esp_aimbot_radioButton7_text">تەنها تەقە</string>
+    <string name="protection_mode">لیستی پاراستن</string>
+    <string name="protection_logo">پاراستنی لوگۆ</string>
+    <string name="block_report_island">پاراستنی یاریگا</string>
+    <string name="vision_mode">بینین</string>
+    <string name="recoil_weapon_slot_1">ڕیکۆیلی چەک ١</string>
+    <string name="recoil_weapon_slot_2">ڕیکۆیلی چەک ٢</string>
+    <string name="touch_simulation">شبیه‌سازی دەستلێدان</string>
+    <string name="bullet_tracking">بۆلەت تراک</string>
+    <string name="touch_simulation_setting">ڕێکخستنی شبیه‌سازی دەستلێدان</string>
+    <string name="other_setting">ڕێکخستنەکانی تر</string>
+    <string name="sets_smooth_velocity_aim">دانانی خێرایی ئایمی ڕێک:</string>
+    <string name="smooth_velocity">خێرایی ڕێک</string>
+    <string name="sets_the_aiming_bullet_speed">دانانی خێرایی فیشەکی ئایم:</string>
+    <string name="aiming_bullet_speed">خێرایی فیشەکی ئایم</string>
+    <string name="change_rotatation_screen">گۆڕینی ئاراستەی شاشە</string>
+    <string name="rotation_screen">پۆرتی بارگەکردن لای چەپ</string>
+    <string name="show_area_touch">نیشاندانی ناوچەی دەستلێدان</string>
+    <string name="indicates_where_to_touch">ئەو شوێنە نیشان دەدات کە دەبێت دەستلێدرێت</string>
+    <string name="touch_range_size">قەبارەی مەودای دەستلێدان</string>
+    <string name="sets_range_size_of_touch">دانانی قەبارەی مەودای دەستلێدان:</string>
+    <string name="touch_position_x">شوێنی دەستلێدان X</string>
+    <string name="sets_postion_y_of_touch">دانانی شوێنی دەستلێدان Y:</string>
+    <string name="sets_postion_x_of_touch_">دانانی شوێنی دەستلێدان X:</string>
+    <string name="touch_position_y">شوێنی دەستلێدان Y</string>
+    <string name="setting_the_shot_distance">دانانی دووری تەقە:</string>
+    <string name="sets_the_shot_prediction_distance">دانانی دووری پێشبینی تەقە:</string>
+    <string name="check_all">دیاریکردنی هەموو</string>
+    <string name="none_all">لابردنی هەموو</string>
+    <string name="global">GLOBAL</string>
+    <string name="korea">KOREA</string>
+    <string name="vietnam">VIETNAM</string>
+    <string name="taiwan">TAIWAN</string>
+    <string name="twitter">TWITTER</string>
+    
+    <!-- Vehicle Names -->
+    <string name="esp_inventory_UTV_text">UTV</string>
+    <string name="esp_inventory_MonsterTruck_text">مۆنستەر</string>
+    <string name="esp_inventory_Buggy_text">باگی</string>
+    <string name="esp_inventory_UAZ_text">UAZ</string>
+    <string name="esp_inventory_Trike_text">ترایک</string>
+    <string name="esp_inventory_Jet_text">فڕۆکە</string>
+    <string name="esp_inventory_CoupeRB_text">کوپ</string>
+    <string name="esp_inventory_Motorglider_text">فڕۆکەی سەرشان</string>
+    <string name="esp_inventory_Bike_text">پاسکیل</string>
+    <string name="esp_inventory_Dacia_text">داسیا</string>
+    <string name="esp_inventory_Boat_text">بەلەم</string>
+    <string name="esp_inventory_Bus_text">پاس</string>
+    <string name="esp_inventory_Mirado_text">میرادۆ</string>
+    <string name="esp_inventory_Snowbike_text">پاسکیلی بەفر</string>
+    <string name="esp_inventory_Scooter_text">سکوتەر</string>
+    <string name="esp_inventory_Rony_text">رۆنی</string>
+    <string name="esp_inventory_Snowmobile_text">سنۆومۆبیل</string>
+    <string name="esp_inventory_Tempo_text">تێمپۆ</string>
+    <string name="esp_inventory_Truck_text">لۆری</string>
+    <string name="esp_inventory_LadaNiva_text">لادا نیڤا</string>
+    <string name="esp_inventory_BRDM_text">BRDM</string>
+    <string name="esp_inventory_ATV_text">ATV1</string>
+    
+    <!-- Inventory Items -->
+    <string name="esp_inventory_Crate_text">سندوق</string>
+    <string name="esp_inventory_Airdrop_text">هاواری ئاسمانی</string>
+    <string name="esp_inventory_DropPlane_text">فڕۆکەی هاوار</string>
+    <string name="esp_inventory_FlareGun_text">تەپانکی فلەیر</string>
+    
+    <!-- Scopes -->
+    <string name="esp_inventory_x2_text">2x</string>
+    <string name="esp_inventory_x3_text">3x</string>
+    <string name="esp_inventory_x4_text">4x</string>
+    <string name="esp_inventory_x6_text">6x</string>
+    <string name="esp_inventory_x8_text">8x</string>
+    <string name="esp_inventory_reddot_text">خاڵی سور</string>
+    <string name="esp_inventory_hollow_text">بەتاڵ</string>
+    <string name="esp_inventory_canted_text">لار</string>
+    
+    <!-- Weapons -->
+    <string name="esp_inventory_m416_text">M416</string>
+    <string name="esp_inventory_AKM_text">AKM</string>
+    <string name="esp_inventory_M16A4_text">M16A4</string>
+    <string name="esp_inventory_M762_text">M762</string>
+    <string name="esp_inventory_SCARL_text">SCAR-L</string>
+    <string name="esp_inventory_AC32_text">ACE32</string>
+    <string name="esp_inventory_AUG_text">AUG</string>
+    <string name="esp_inventory_HoneyBadger_text">هەنی بادگەر</string>
+    <string name="esp_inventory_G36C_text">G36C</string>
+    <string name="esp_inventory_Groza_text">گرۆزا</string>
+    <string name="esp_inventory_QBZ_text">QBZ</string>
+    <string name="esp_inventory_FAMAS_text">فاماس</string>
+    <string name="esp_inventory_M249_text">M249</string>
+    <string name="esp_inventory_DP28_text">DP28</string>
+    <string name="esp_inventory_MG3_text">MG3</string>
+    
+    <!-- SMGs -->
+    <string name="esp_inventory_UMP_text">UMP</string>
+    <string name="esp_inventory_TommyGun_text">تۆمی گان</string>
+    <string name="esp_inventory_vector_text">ڤێکتۆر</string>
+    <string name="esp_inventory_MP5K_text">MP5K</string>
+    <string name="esp_inventory_P90_text">P90</string>
+    <string name="esp_inventory_UZI_text">UZI</string>
+    <string name="esp_inventory_bizon_text">بازن</string>
+    
+    <!-- Snipers -->
+    <string name="esp_inventory_AWM_text">AWM</string>
+    <string name="esp_inventory_Kar98k_text">Kar98k</string>
+    <string name="esp_inventory_M24_text">M24</string>
+    <string name="esp_inventory_QBU_text">QBU</string>
+    <string name="esp_inventory_Mini14_text">Mini14</string>
+    <string name="esp_inventory_SKS_text">SKS</string>
+    <string name="esp_inventory_SLR_text">SLR</string>
+    <string name="esp_inventory_MK14_text">MK14</string>
+    <string name="esp_inventory_Mosin_text">مۆزین</string>
+    <string name="esp_inventory_Win94_text">Win94</string>
+    <string name="esp_inventory_MK12_text">MK12</string>
+    <string name="esp_inventory_VSS_text">VSS</string>
+    <string name="esp_inventory_AMR_text">AMR</string>
+    <string name="esp_inventory_MK47_text">MK47</string>
+    
+    <!-- Shotguns -->
+    <string name="esp_inventory_S12K_text">S12K</string>
+    <string name="esp_inventory_S1897_text">S1897</string>
+    <string name="esp_inventory_S686_text">S686</string>
+    <string name="esp_inventory_M1014_text">M1014</string>
+    <string name="esp_inventory_sawed_text">ڕەوەند</string>
+    <string name="esp_inventory_DBS_text">DBS</string>
+    <string name="esp_inventory_NS2000_text">NS2000</string>
+    
+    <!-- Pistols -->
+    <string name="esp_inventory_P92_text">P92</string>
+    <string name="esp_inventory_R45_text">R45</string>
+    <string name="esp_inventory_P18C_text">P18C</string>
+    <string name="esp_inventory_P1911_text">P1911</string>
+    <string name="esp_inventory_R1895_text">R1895</string>
+    <string name="esp_inventory_Scorpion_text">دوپشک</string>
+    <string name="esp_inventory_Desert_text">دێزەرت ئیگڵ</string>
+    
+    <!-- Melee -->
+    <string name="esp_inventory_Pan_text">قازان</string>
+    <string name="esp_inventory_Machete_text">ماشیت</string>
+    <string name="esp_inventory_Sickle_text">دەرگ</string>
+    <string name="esp_inventory_Crowbar_text">قولاج</string>
+    <string name="esp_inventory_Crossbow_text">کەوانە</string>
+    <string name="esp_inventory_Explosive_text">کەوانەی تەقێنەر</string>
+    
+    <!-- Grenades -->
+    <string name="esp_inventory_grenade_text">قەنابە</string>
+    <string name="esp_inventory_molotov_text">مۆلۆتۆڤ</string>
+    <string name="esp_inventory_smoke_text">دووکەڵ</string>
+    <string name="esp_inventory_stun_text">ستون</string>
+    
+    <!-- Ammo -->
+    <string name="esp_inventory_a9_text">9mm</string>
+    <string name="esp_inventory_a7_text">7.62mm</string>
+    <string name="esp_inventory_a5_text">5.56mm</string>
+    <string name="esp_inventory_a12_text">12 gauge</string>
+    <string name="esp_inventory_a300_text">300 magnum</string>
+    <string name="esp_inventory_a45_text">45ACP</string>
+    <string name="esp_inventory_arrow_text">تیر</string>
+    <string name="esp_inventory_BMG50_text">50BMG</string>
+    
+    <!-- Equipment -->
+    <string name="esp_inventory_bag1_text">جانتای پلە ١</string>
+    <string name="esp_inventory_helmet1_text">خۆدای پلە ١</string>
+    <string name="esp_inventory_bag2_text">جانتای پلە ٢</string>
+    <string name="esp_inventory_helmet2_text">خۆدای پلە ٢</string>
+    <string name="esp_inventory_bag3_text">جانتای پلە ٣</string>
+    <string name="esp_inventory_helmet3_text">خۆدای پلە ٣</string>
+    <string name="esp_inventory_vest1_text">ڕاستەپلە پلە ١</string>
+    <string name="esp_inventory_vest2_text">ڕاستەپلە پلە ٢</string>
+    <string name="esp_inventory_vest3_text">ڕاستەپلە پلە ٣</string>
+    
+    <!-- Medical -->
+    <string name="esp_inventory_bandage_text">باندێژ</string>
+    <string name="esp_inventory_medkit_text">سەتەکی پزیشکی</string>
+    <string name="esp_inventory_firstaid_text">یارمەتی یەکەم</string>
+    <string name="esp_inventory_injection_text">دەرزی</string>
+    <string name="esp_inventory_painkiller_text">ئازارشکێن</string>
+    <string name="esp_inventory_energydrink_text">خواردنەوەی وزە</string>
+    
+    <!-- Attachments -->
+    <string name="esp_inventory_SuppressorAr_text">کاتی هەڵمەتی</string>
+    <string name="esp_inventory_SuppressorSMG_text">کاتی SMG</string>
+    <string name="esp_inventory_FlashHiderAr_text">شاردنەوەی فلەشی هەڵمەتی</string>
+    <string name="esp_inventory_FlashHiderSMG_text">شاردنەوەی فلەشی SMG</string>
+    <string name="esp_inventory_ArCompensator_text">جێگیری هەڵمەتی</string>
+    <string name="esp_inventory_CompensatorSMG_text">جێگیری SMG</string>
+    <string name="esp_inventory_SuppressorSniper_text">کاتی سناپەر</string>
+    <string name="esp_inventory_FlashHiderSniper_text">شاردنەوەی فلەشی سناپەر</string>
+    <string name="esp_inventory_SniperCompensator_text">جێگیری سناپەر</string>
+    
+    <!-- Grips -->
+    <string name="esp_inventory_LaserSight_text">لەیزەر</string>
+    <string name="esp_inventory_LightGrip_text">گیرفانی سووک</string>
+    <string name="esp_inventory_ThumbGrip_text">گیرفانی پەنجە</string>
+    <string name="esp_inventory_VerticalGrip_text">گیرفانی ستونی</string>
+    <string name="esp_inventory_HalfGrip_text">گیرفانی نیوە</string>
+    <string name="esp_inventory_AngledGrip_text">گیرفانی لار</string>
+    
+    <!-- Other Attachments -->
+    <string name="esp_inventory_TacticalStock_text">ستۆکی تاکتیکی</string>
+    <string name="esp_inventory_Duckbill_text">دەنکی مراوی</string>
+    <string name="esp_inventory_Choke_text">خنکێنەر</string>
+    <string name="esp_inventory_StockMicroUZI_text">ستۆکی بچوکی UZI</string>
+    <string name="esp_inventory_QuiverCrossBow_text">جعبه‌ی کەوان</string>
+    <string name="esp_inventory_BulletLoop_text">بەربەستی فیشەک</string>
+    <string name="esp_inventory_GasCan_text">سەتەلی بەنزین</string>
+    <string name="esp_inventory_CheekPad_text">پادەی گونه</string>
+</resources>

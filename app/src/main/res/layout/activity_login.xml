@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/r3pmod"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/icon"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="@string/app_name"
+            android:alpha="0"
+            android:translationY="300dp" />
+
+        <TextView
+            android:id="@+id/appTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@color/livaiamk"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.05"
+            android:fontFamily="@font/livaifont"
+            android:shadowColor="@color/black"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="6"
+            android:layout_marginBottom="40dp"
+            android:alpha="0"
+            android:translationY="150dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/pastekey"
+            app:hintTextColor="@color/white"
+            app:boxStrokeColor="@android:color/white"
+            app:boxStrokeWidth="2dp"
+            app:boxStrokeWidthFocused="2dp"
+            app:boxStrokeErrorColor="@android:color/white"
+            app:hintTextAppearance="@style/TextInputHintWhite"
+            app:boxBackgroundMode="outline"
+            app:boxBackgroundColor="@color/theme"
+            app:boxCornerRadiusTopStart="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxCornerRadiusBottomEnd="16dp"
+            app:endIconMode="custom"
+            app:endIconDrawable="@drawable/ic_paste"
+            app:endIconTint="@color/white"
+            android:layout_marginBottom="24dp"
+            android:alpha="0"
+            android:translationY="100dp"
+            android:translationX="0dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:hint="@string/pastekey"
+                android:textColorHint="#80FFFFFF"
+                android:inputType="textPassword"
+                android:background="@null"
+                android:textSize="16sp"
+                android:fontFamily="@font/livaifont" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/error_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:visibility="gone"
+            android:layout_marginBottom="16dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/loginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/livaifont"
+            android:backgroundTint="@color/button5"
+            app:cornerRadius="20dp"
+            app:strokeColor="@android:color/white"
+            app:strokeWidth="2dp"
+            app:icon="@drawable/ic_login"
+            app:iconTint="@color/white"
+            app:iconGravity="textStart"
+            app:iconPadding="12dp"
+            app:elevation="12dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:alpha="0"
+            android:translationY="80dp"
+            android:translationX="0dp" />
+
+        <LinearLayout
+            android:id="@+id/iconsLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:alpha="0"
+            android:translationY="100dp">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/iconTelegram"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="12dp"
+                android:layout_gravity="center"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/telegram" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/iconUser"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="12dp"
+                android:layout_gravity="center"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/user" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/iconChrome"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="12dp"
+                android:layout_gravity="center"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/chrome" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

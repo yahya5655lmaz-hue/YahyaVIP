@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:alpha="0.8"
+                    android:background="@drawable/bg_uuid"
+                    android:fontFamily="@font/livaifont"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:text="@string/protection_mode"
+                    android:textColor="@color/white"
+                    android:textSize="14.0dp"
+                    android:textStyle="normal"
+                    android:visibility="visible" />
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2.0">
+
+                <LinearLayout
+                    android:background="@drawable/button_installfl"
+                    android:padding="5.0dip"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35.0dip"
+                    android:layout_marginTop="5.0dip"
+                    android:layout_marginBottom="5.0dip"
+                    android:layout_marginEnd="10.0dip"
+                    android:layout_marginStart="10.0dip"
+                    android:elevation="10.0dip"
+                    app:cardCornerRadius="10.0dip">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginStart="5dp"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        app:lottie_rawRes="@raw/antiban" />
+
+                    <Switch
+                        android:textSize="12.0sp"
+                        android:textColor="#ffffffff"
+                        android:id="@+id/menuloho"
+                        android:layout_width="fill_parent"
+                        android:gravity="center"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="1.0dip"
+                        android:thumb="@drawable/ic_switch_off"
+                        android:text="@string/protection_logo"
+                        android:alpha="0.8"
+                        android:track="@drawable/ic_switch_on"
+                        android:fontFamily="@font/livaifont"
+                        android:layout_marginStart="5.0dip"
+                        android:layout_marginEnd="5.0dip"
+                        android:buttonTint="@color/button5" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+             <LinearLayout
+                android:id="@+id/menucrash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+
+                    <Switch
+                        android:id="@+id/iscrash"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginEnd="10dp"
+                        android:alpha="0.8"
+                        android:buttonTint="@color/button5"
+                        android:fontFamily="@font/livaifont"
+                        android:text="كراش"
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="15sp"
+                        android:thumb="@drawable/ic_switch_off"
+                        android:track="@drawable/ic_switch_on" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:elevation="10dp"
+                    android:visibility="visible"
+                    android:background="@drawable/button_installfl"
+                    android:padding="5dp"
+                    app:cardCornerRadius="10dp">
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2.0">
+
+                <LinearLayout
+                    android:background="@drawable/button_installfl"
+                    android:padding="5.0dip"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35.0dip"
+                    android:layout_marginTop="5.0dip"
+                    android:layout_marginBottom="5.0dip"
+                    android:layout_marginEnd="10.0dip"
+                    android:layout_marginStart="10.0dip"
+                    android:elevation="10.0dip"
+                    app:cardCornerRadius="10.0dip">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginStart="5dp"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        app:lottie_rawRes="@raw/island" />
+
+                    <Switch
+                        android:textSize="12.0sp"
+                        android:textColor="#ffffffff"
+                        android:id="@+id/menuisland"
+                        android:layout_width="fill_parent"
+                        android:gravity="center"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="1.0dip"
+                        android:thumb="@drawable/ic_switch_off"
+                        android:text="@string/block_report_island"
+                        android:alpha="0.8"
+                        android:track="@drawable/ic_switch_on"
+                        android:fontFamily="@font/livaifont"
+                        android:layout_marginStart="5.0dip"
+                        android:layout_marginEnd="5.0dip"
+                        android:buttonTint="@color/button5" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:alpha="0.8"
+                    android:background="@drawable/bg_uuid"
+                    android:fontFamily="@font/livaifont"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:text="@string/vision_mode"
+                    android:textColor="@color/white"
+                    android:textSize="14.0dp"
+                    android:textStyle="normal"
+                    android:visibility="visible" />
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2.0">
+
+                <LinearLayout
+                    android:background="@drawable/button_installfl"
+                    android:padding="5.0dip"
+                    android:visibility="visible"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35.0dip"
+                    android:layout_marginTop="5.0dip"
+                    android:layout_marginBottom="5.0dip"
+                    android:layout_marginEnd="10.0dip"
+                    android:layout_marginStart="10.0dip"
+                    android:elevation="10.0dip"
+                    app:cardCornerRadius="10.0dip">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginStart="5dp"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        app:lottie_rawRes="@raw/esp2" />
+
+                    <Switch
+                        android:textSize="12.0sp"
+                        android:textColor="#ffffffff"
+                        android:id="@+id/isenableesp"
+                        android:layout_width="fill_parent"
+                        android:gravity="center"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="1.0dip"
+                        android:thumb="@drawable/ic_switch_off"
+                        android:text="@string/esp_visual_isenableesp_text"
+                        android:alpha="0.8"
+                        android:track="@drawable/ic_switch_on"
+                        android:fontFamily="@font/livaifont"
+                        android:layout_marginStart="5.0dip"
+                        android:layout_marginEnd="5.0dip"
+                        android:buttonTint="@color/button5" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <ToggleButton
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:textColor="#ffffffff"
+                    android:id="@+id/fps30"
+                    android:tag="0"
+                    android:background="@drawable/tbutton"
+                    android:focusable="false"
+                    android:visibility="gone"
+                    android:clickable="true"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="4dp"
+                    android:checked="false"
+                    android:textOn="30 FPS"
+                    android:textOff="30 FPS"
+                    android:text="30 FPS"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/livaifont"/>
+                <ToggleButton
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:textColor="#ffffffff"
+                    android:id="@+id/fps60"
+                    android:tag="1"
+                    android:background="@drawable/tbutton"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="4dp"
+                    android:checked="false"
+                    android:textOn="60 FPS"
+                    android:textOff="60 FPS"
+                    android:text="60 FPS"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/livaifont"/>
+                <ToggleButton
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:textColor="#ffffffff"
+                    android:id="@+id/fps120"
+                    android:tag="2"
+                    android:background="@drawable/tbutton"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="4dp"
+                    android:checked="false"
+                    android:textOn="120 FPS"
+                    android:textOff="120 FPS"
+                    android:text="120 FPS"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/livaifont"/>
+                <ToggleButton
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:textColor="#ffffffff"
+                    android:id="@+id/fps130"
+                    android:tag="3"
+                    android:background="@drawable/tbutton"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="4dp"
+                    android:checked="false"
+                    android:textOn="144 FPS"
+                    android:textOff="144 FPS"
+                    android:text="144 FPS"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/livaifont"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ToggleButton
+                    android:id="@+id/isLine"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="4.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/tbutton"
+                    android:checked="false"
+                    android:fontFamily="@font/livaifont"
+                    android:tag="0"
+                    android:text="@string/line"
+                    android:textColor="#FFFFFFFF"
+                    android:textOff="@string/line"
+                    android:textOn="@string/line"
+                    android:textSize="12.0sp"
+                    android:textStyle="bold" />
+
+                <ToggleButton
+                    android:id="@+id/isWeaponIcon"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="4.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/tbutton"
+                    android:checked="false"
+                    android:fontFamily="@font/livaifont"
+                    android:tag="0"
+                    android:text="@string/weapon"
+                    android:textColor="#FFFFFFFF"
+                    android:textOff="@string/weapon"
+                    android:textOn="@string/weapon"
+                    android:textSize="12.0sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ToggleButton
+                    android:id="@+id/isBox"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="4.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/tbutton"
+                    android:checked="false"
+                    android:fontFamily="@font/livaifont"
+                    android:tag="0"
+                    android:text="@string/box"
+                    android:textColor="#FFFFFFFF"
+                    android:textOff="@string/box"
+                    android:textOn="@string/box"
+                    android:textSize="12.0sp"
+                    android:textStyle="bold" />
+
+                <ToggleButton
+                    android:id="@+id/isSkeleton"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="4.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/tbutton"
+                    android:checked="false"
+                    android:fontFamily="@font/livaifont"
+                    android:tag="0"
+                    android:text="@string/skeleton"
+                    android:textColor="#FFFFFFFF"
+                    android:textOff="@string/skeleton"
+                    android:textOn="@string/skeleton"
+                    android:textSize="12.0sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ToggleButton
+                    android:id="@+id/isHealth"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="4.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/tbutton"
+                    android:checked="false"
+                    android:fontFamily="@font/livaifont"
+                    android:tag="0"
+                    android:text="@string/health"
+                    android:textColor="#FFFFFFFF"
+                    android:textOff="@string/health"
+                    android:textOn="@string/health"
+                    android:textSize="12.0sp"
+                    android:textStyle="bold" />
+
+                <ToggleButton
+                    android:id="@+id/isDistance"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="4.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/tbutton"
+                    android:checked="false"
+                    android:fontFamily="@font/livaifont"
+                    android:tag="0"
+                    android:text="@string/distance"
+                    android:textColor="#FFFFFFFF"
+                    android:textOff="@string/distance"
+                    android:textOn="@string/distance"
+                    android:textSize="12.0sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ToggleButton
+                    android:id="@+id/isName"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="4.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/tbutton"
+                    android:checked="false"
+                    android:fontFamily="@font/livaifont"
+                    android:tag="0"
+                    android:text="@string/name"
+                    android:textColor="#FFFFFFFF"
+                    android:textOff="@string/name"
+                    android:textOn="@string/name"
+                    android:textSize="12.0sp"
+                    android:textStyle="bold" />
+
+                <ToggleButton
+                    android:id="@+id/isHead"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="4.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/tbutton"
+                    android:checked="false"
+                    android:fontFamily="@font/livaifont"
+                    android:tag="0"
+                    android:text="@string/head"
+                    android:textColor="#FFFFFFFF"
+                    android:textOff="@string/head"
+                    android:textOn="@string/head"
+                    android:textSize="12.0sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ToggleButton
+                    android:id="@+id/isNoBot"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="4.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/tbutton"
+                    android:checked="false"
+                    android:fontFamily="@font/livaifont"
+                    android:tag="0"
+                    android:text="@string/hide_bot"
+                    android:textColor="#FFFFFFFF"
+                    android:textOff="@string/hide_bot"
+                    android:textOn="@string/hide_bot"
+                    android:textSize="12.0sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+                
+
+    </ScrollView>
+
+
+</RelativeLayout>

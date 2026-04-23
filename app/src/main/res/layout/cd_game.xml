@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/theme"
+        app:cardCornerRadius="22dp"
+        app:cardElevation="12dp"
+        android:layout_marginBottom="16dp"
+        android:foreground="@drawable/white_border">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:layout_marginBottom="8dp">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:id="@+id/appIconsContainer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/bgmiIconContainer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:background="?attr/selectableItemBackgroundBorderless">
+
+                            <com.google.android.material.imageview.ShapeableImageView
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/circlebgmi"
+                                app:shapeAppearanceOverlay="@style/Theme.CheatUIDev.ShapeAppearanceOverlay.Circle"
+                                android:background="@drawable/icon_border" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/bgmi"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                android:maxLines="1"
+                                android:ellipsize="end"
+                                android:layout_marginTop="4dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/globalIconContainer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:background="?attr/selectableItemBackgroundBorderless">
+
+                            <com.google.android.material.imageview.ShapeableImageView
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/circlegl"
+                                app:shapeAppearanceOverlay="@style/Theme.CheatUIDev.ShapeAppearanceOverlay.Circle"
+                                android:background="@drawable/icon_border" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/global"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                android:maxLines="1"
+                                android:ellipsize="end"
+                                android:layout_marginTop="4dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/koreaIconContainer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:background="?attr/selectableItemBackgroundBorderless">
+
+                            <com.google.android.material.imageview.ShapeableImageView
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/krcircle"
+                                app:shapeAppearanceOverlay="@style/Theme.CheatUIDev.ShapeAppearanceOverlay.Circle"
+                                android:background="@drawable/icon_border" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/korea"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                android:maxLines="1"
+                                android:ellipsize="end"
+                                android:layout_marginTop="4dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/vietnamIconContainer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:background="?attr/selectableItemBackgroundBorderless">
+
+                            <com.google.android.material.imageview.ShapeableImageView
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/circlevn"
+                                app:shapeAppearanceOverlay="@style/Theme.CheatUIDev.ShapeAppearanceOverlay.Circle"
+                                android:background="@drawable/icon_border" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/vietnam"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                android:maxLines="1"
+                                android:ellipsize="end"
+                                android:layout_marginTop="4dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/taiwanIconContainer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:background="?attr/selectableItemBackgroundBorderless">
+
+                            <com.google.android.material.imageview.ShapeableImageView
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/circletw"
+                                app:shapeAppearanceOverlay="@style/Theme.CheatUIDev.ShapeAppearanceOverlay.Circle"
+                                android:background="@drawable/icon_border" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/taiwan"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                android:maxLines="1"
+                                android:ellipsize="end"
+                                android:layout_marginTop="4dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/twitterIconContainer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:background="?attr/selectableItemBackgroundBorderless">
+
+                            <com.google.android.material.imageview.ShapeableImageView
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/tw"
+                                app:shapeAppearanceOverlay="@style/Theme.CheatUIDev.ShapeAppearanceOverlay.Circle"
+                                android:background="@drawable/icon_border" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/twitter"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                android:maxLines="1"
+                                android:ellipsize="end"
+                                android:layout_marginTop="4dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/theme"
+        app:cardCornerRadius="22dp"
+        app:cardElevation="12dp"
+        android:layout_marginBottom="16dp"
+        android:foreground="@drawable/white_border"
+        android:visibility="gone"
+        android:id="@+id/selectedAppCard">
+
+        <LinearLayout
+            android:id="@+id/selectedAppContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <LinearLayout
+                android:id="@+id/selectedAppDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/selectedAppIcon"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_gravity="center"
+                    app:shapeAppearanceOverlay="@style/Theme.CheatUIDev.ShapeAppearanceOverlay.Circle"
+                    android:background="@drawable/icon_border" />
+
+                <Space
+                    android:layout_width="14dp"
+                    android:layout_height="0dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/selectedAppTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/livaifont"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/selectedAppPackage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/buttonContainerBgmi"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/InstallBgmi"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/livaifont"
+                    android:text="@string/install"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    app:cornerRadius="16dp"
+                    app:backgroundTint="@color/button1"
+                    app:strokeColor="@color/button1"
+                    app:strokeWidth="1dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/UninstallBgmi"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:fontFamily="@font/livaifont"
+                    android:text="@string/uninstall"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    app:cornerRadius="16dp"
+                    app:backgroundTint="@color/red"
+                    app:strokeColor="@color/red"
+                    app:strokeWidth="1dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/buttonContainerGlobal"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/InstallGlobal"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/livaifont"
+                    android:text="@string/install"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    app:cornerRadius="16dp"
+                    app:backgroundTint="@color/button1"
+                    app:strokeColor="@color/button1"
+                    app:strokeWidth="1dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/UninstallGlobal"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:fontFamily="@font/livaifont"
+                    android:text="@string/uninstall"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    app:cornerRadius="16dp"
+                    app:backgroundTint="@color/red"
+                    app:strokeColor="@color/red"
+                    app:strokeWidth="1dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/buttonContainerKR"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/InstallKR"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/livaifont"
+                    android:text="@string/install"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    app:cornerRadius="16dp"
+                    app:backgroundTint="@color/button1"
+                    app:strokeColor="@color/button1"
+                    app:strokeWidth="1dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/UninstallKR"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:fontFamily="@font/livaifont"
+                    android:text="@string/uninstall"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    app:cornerRadius="16dp"
+                    app:backgroundTint="@color/red"
+                    app:strokeColor="@color/red"
+                    app:strokeWidth="1dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/buttonContainerVNG"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/InstallVNG"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/livaifont"
+                    android:text="@string/install"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    app:cornerRadius="16dp"
+                    app:backgroundTint="@color/button1"
+                    app:strokeColor="@color/button1"
+                    app:strokeWidth="1dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/UninstallVNG"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:fontFamily="@font/livaifont"
+                    android:text="@string/uninstall"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    app:cornerRadius="16dp"
+                    app:backgroundTint="@color/red"
+                    app:strokeColor="@color/red"
+                    app:strokeWidth="1dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/buttonContainerTW"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/InstallTW"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/livaifont"
+                    android:text="@string/install"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    app:cornerRadius="16dp"
+                    app:backgroundTint="@color/button1"
+                    app:strokeColor="@color/button1"
+                    app:strokeWidth="1dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/UninstallTW"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:fontFamily="@font/livaifont"
+                    android:text="@string/uninstall"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    app:cornerRadius="16dp"
+                    app:backgroundTint="@color/red"
+                    app:strokeColor="@color/red"
+                    app:strokeWidth="1dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/buttonContainerTR"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/InstallTR"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/livaifont"
+                    android:text="@string/install"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    app:cornerRadius="16dp"
+                    app:backgroundTint="@color/button1"
+                    app:strokeColor="@color/button1"
+                    app:strokeWidth="1dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/UninstallTR"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:fontFamily="@font/livaifont"
+                    android:text="@string/uninstall"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    app:cornerRadius="16dp"
+                    app:backgroundTint="@color/red"
+                    app:strokeColor="@color/red"
+                    app:strokeWidth="1dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

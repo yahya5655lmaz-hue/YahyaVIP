@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="theme">#A213255C</color> 
+    <color name="theme1">#B81E3E9E</color>
+    <color name="theme2">#181738</color>
+    <color name="theme3">#CA181738</color>
+//━━━━━━━━━━━━━━━━━━━━━━━━━━─
+    <color name="black">#F2000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="whitegelap">#80FFFFFF</color>
+    <color name="green">#FF00FFAA</color>
+    <color name="red">#C4B21919</color> 
+    <color name="livaiamk">#FFE500</color> 
+//━━━━━━━━━━━━━(OFF)━━━━━━━━━━━━━─
+    <color name="button1">#503399FF</color>
+    <color name="button2">#700066CC</color>
+    <color name="button3">#300066CC</color>
+//━━━━━━━━━━━━━(ON)━━━━━━━━━━━━━─
+    <color name="button4">#FF3399FF</color>
+    <color name="button5">#FF0066CC</color>
+</resources>

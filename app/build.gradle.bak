@@ -1,0 +1,158 @@
+plugins {
+    id 'com.android.application'
+    id 'top.niunaijun.blackobfuscator'
+    id 'org.lsposed.lsparanoid'
+}
+
+
+android {
+    namespace rootProject.ext.packageName
+    compileSdk 34
+    ndkVersion rootProject.ext.ndkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        applicationId rootProject.ext.packageName
+        minSdk 24
+        targetSdk 26
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+        vectorDrawables {
+            useSupportLibrary true
+        }
+        buildFeatures {
+            buildConfig true
+        }
+        ndk {
+            abiFilters 'arm64-v8a'
+        }
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            jniDebuggable true
+            minifyEnabled false
+            signingConfig signingConfigs.debug//
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        release {
+            debuggable false
+            jniDebuggable false
+            minifyEnabled true
+            shrinkResources true
+            signingConfig signingConfigs.release//
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'),
+                    'proguard-rules.pro',
+                    'resguard-rules.pro'
+        }
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            def currentDate = new Date().format('yyyy-MM-dd')
+            def fileName = "𝚁𝟹𝙿𝙼𝙾𝙳  (${currentDate}).apk"
+            output.outputFileName = fileName
+
+            variant.getAssembleProvider().configure() {
+                it.doLast {
+                    copy {
+                        from "build/outputs/mapping/${variant.buildType.name}"
+                        into 'proguard'
+                        include '**/mapping.txt'
+                    }
+                }
+            }
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    externalNativeBuild {
+        ndkBuild {
+            path file('src/main/jni/Android.mk')
+        }
+    }
+
+    ndkVersion '24.0.8215888'
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+    packagingOptions {
+        exclude "META-INF/DEPENDENCIES"
+        exclude "META-INF/LICENSE"
+        exclude "META-INF/LICENSE.txt"
+        exclude "META-INF/NOTICE"
+        exclude "META-INF/NOTICE.txt"
+    }
+}
+afterEvaluate {
+    tasks.matching { it.name.contains("blackObfuscator") }.configureEach {
+        it.enabled = true
+        it.depth = 1
+        it.obfClass = [
+                "${rootProject.ext.packageName}.**",
+                "${rootProject.ext.packageName.replaceAll('\\.', '\\\\.')}**"
+        ]
+        it.blackClass = []
+        it.encryptClass = true
+        it.encryptMethod = true
+        it.encryptField = true
+    }
+    tasks.matching { it.name.toLowerCase().contains("assemble") && it.name.toLowerCase().contains("release") }.configureEach {
+        it.doLast {
+            if (file("build/outputs/mapping/release/mapping.txt").exists()) {
+                copy {
+                    from "build/outputs/mapping/release"
+                    into 'proguard'
+                    include '**/mapping.txt'
+                }
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar", "*.aar"])
+    implementation 'io.michaelrocks:paranoid-core:0.3.7'
+    annotationProcessor 'io.michaelrocks:paranoid-processor:0.3.7'
+    implementation("androidx.multidex:multidex:2.0.1")
+    implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation("com.google.android.material:material:1.9.0")
+    implementation 'org.jdeferred:jdeferred-android-aar:1.2.4'
+    implementation 'io.github.molihuan:pathselector:1.1.16'
+    implementation "com.github.topjohnwu.libsu:core:3.1.1"
+    implementation 'nl.joery.animatedbottombar:library:1.1.0'
+    implementation "androidx.cardview:cardview:1.0.0"
+    implementation "com.airbnb.android:lottie:6.0.0"
+    implementation("com.github.bumptech.glide:glide:4.16.0")
+    implementation 'com.blankj:utilcodex:1.31.1'
+    implementation 'net.lingala.zip4j:zip4j:2.9.0'
+    implementation 'com.github.techinessoverloaded:progress-dialog:1.5.1'
+    implementation 'com.android.volley:volley:1.2.1'
+    implementation "com.github.skydoves:powerspinner:1.2.3"
+    implementation "io.github.rupinderjeet:kprogresshud:1.0.0"
+    implementation 'com.github.ismaeldivita:chip-navigation-bar:1.4.0'
+    implementation('com.github.tiann:FreeReflection:3.1.0') {
+        exclude group: 'me.weishu.reflection'
+    }
+    implementation "com.github.CodingGay.BlackReflection:core:$rootProject.ext.blackReflection"
+    annotationProcessor "com.github.CodingGay.BlackReflection:compiler:$rootProject.ext.blackReflection"
+}configurations.all {
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        if (details.requested.group == 'com.android.tools.build' && details.requested.name == 'aapt2') {
+            details.useVersion "8.9.2-12782657" // Hata aldığın sürümle aynı kalsın ama yereli zorlayacağız
+        }
+    }
+}

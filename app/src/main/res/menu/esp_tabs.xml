@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/player"
+        android:icon="@drawable/vector_vision"
+        android:title="@string/player" />
+
+    <item
+        android:id="@+id/navItem"
+        android:icon="@drawable/vector_items"
+        android:title="@string/navItem" />
+
+    <item
+        android:id="@+id/navAim"
+        android:icon="@drawable/vector_aim"
+        android:title="@string/navAim" />
+
+    <item
+        android:id="@+id/navSdk"
+        android:icon="@drawable/vector_injector"
+        android:title="@string/navSdk" />
+
+</menu>
